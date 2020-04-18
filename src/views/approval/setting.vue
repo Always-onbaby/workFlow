@@ -100,12 +100,12 @@ export default {
                         this.tipList.push({ name: data.childNode.nodeName, type: "审核人" })
                     }
                     this.reErr(data.childNode)
-                } else if (data.childNode.type == 2) {
+                } else if (data.childNode.type == 2) { //抄送人
                     if (data.childNode.error) {
                         this.tipList.push({ name: data.childNode.nodeName, type: "抄送人" })
                     }
                     this.reErr(data.childNode)
-                } else if (data.childNode.type == 3) {
+                } else if (data.childNode.type == 3) { //条件
                     this.reErr(data.childNode.childNode)
                 } else if (data.childNode.type == 4) {
                     this.reErr(data.childNode)
