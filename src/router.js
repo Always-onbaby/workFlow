@@ -23,7 +23,7 @@ const router = new Router({
     {
       path: '/approval/setting',
       name: 'approval',
-      component: () => import(`@/views/approval/setting`),
+      component: () => import(`@/views/approval/setting/Setting`),
       meta: {
         title: '审批流_方案设置',
       }

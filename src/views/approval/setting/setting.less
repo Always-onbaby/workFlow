@@ -1,0 +1,73 @@
+.designer {
+	.create-page-header {
+		z-index: 11;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 54px;
+		padding: 0 20px 0 20px;
+		background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(17, 31, 44, 0.04);
+    z-index: 2020;
+		.name {
+			display: flex;
+			align-items: center;
+			.img-wrap {
+				min-width: 32px;
+				min-height: 32px;
+				width: 32px;
+				height: 32px;
+				margin-right: 10px;
+				border-radius: 10px;
+				opacity: .9;
+			}
+		}
+		.tab {
+			position: absolute;
+			text-align: center;
+			left: 0;
+			right: 0;
+			.tabs {
+				.tab-item {
+					position: relative;
+					display: inline-block;
+					padding: 18px 0;
+					margin: 0 16px;
+					text-decoration: none;
+					font-size: 14px;
+					color: rgba(17, 31, 44, 0.56);
+					cursor: pointer;
+					user-select: none;
+					&::after {
+						position: absolute;
+						transition: all .3s;
+						opacity: 0;
+						width: 100%;
+						content: '';
+						height: 2px;
+						border-radius: 2px;
+						background-color: #409eff;
+						bottom: 0;
+						left: 0;
+					}
+					&.active {
+						&::after {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+		.action {
+			display: flex;
+			align-items: center;
+			position: absolute;
+			right: 20px;
+			.el-button {
+				min-width: 89px;
+				border-radius: 20px;
+			}
+		}
+	}
+}

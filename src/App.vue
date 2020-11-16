@@ -11,14 +11,14 @@ export default {
 </script>
 
 <style>
-#app {
+/* #app {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #333333;
     margin-top: 60px;
-}
-a,
+} */
+/* a,
 abbr,
 acronym,
 address,
@@ -103,7 +103,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
+} */
 .clear:before,
 .clear:after {
     content: " ";

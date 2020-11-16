@@ -5,26 +5,27 @@
         <div class="add-node-popover-body">
           <a class="add-node-popover-item approver" @click="addType(1)">
             <div class="item-wrapper">
-              <span class="iconfont"></span>
+              <!-- <span class="iconfont"></span> -->
+              <i class="el-icon-s-check"></i>
             </div>
-            <p>审批人</p>
+            <p class="text">审批人</p>
           </a>
           <a class="add-node-popover-item notifier" @click="addType(2)">
             <div class="item-wrapper">
-              <span class="iconfont"></span>
+              <!-- <span class="iconfont"></span> -->
+              <i class="el-icon-s-promotion"></i>
             </div>
-            <p>抄送人</p>
+            <p class="text">抄送人</p>
           </a>
           <a class="add-node-popover-item condition" @click="addType(4)">
             <div class="item-wrapper">
-              <span class="iconfont"></span>
+              <!-- <span class="iconfont"></span> -->
+              <i class="el-icon-share"></i>
             </div>
-            <p>条件分支</p>
+            <p class="text">条件分支</p>
           </a>
         </div>
-        <button class="btn" type="button" slot="reference">
-          <span class="iconfont"></span>
-        </button>
+        <i class="el-icon-circle-plus btn" slot="reference"></i>
       </el-popover>
     </div>
   </div>
@@ -99,3 +100,86 @@ export default {
   },
 }
 </script>
+<style lang="less" scoped>
+.add-node-btn-box {
+  width: 220px;
+  display: inline-flex;
+  position: relative;
+  flex-shrink: 0;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: auto;
+    width: 2px;
+    height: 100%;
+    background-color: #cacaca;
+  }
+  .add-node-btn {
+    width: 100%;
+    padding: 20px 0 32px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    .btn {
+      font-size: 30px;
+      color: #3296fa;
+      cursor: pointer;
+      position: relative;
+      border: none;
+    }
+  }
+}
+.add-node-popover-body {
+  display: flex;
+  justify-content: space-between;
+  .add-node-popover-item {
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    &.approver {
+      .item-wrapper {
+        color: #ff943e;
+      }
+    }
+    &.condition {
+      .item-wrapper {
+        color: #15bc83;
+      }
+    }
+    i {
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      font-size: 20px;
+    }
+    &:hover {
+      i {
+        transform: scale(1.5);
+      }
+    }
+    .item-wrapper {
+      user-select: none;
+      display: inline-flex;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 5px;
+      background: #fff;
+      border: 1px solid #e2e2e2;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    .text {
+      font-size: 12px;
+      color: #191f25;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+</style>
