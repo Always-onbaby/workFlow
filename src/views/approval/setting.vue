@@ -91,6 +91,7 @@ export default {
     },
     methods: {
         toReturn() {
+          this.$router.replace('/approval/list')
             //window.location.href = ""
         },
         reErr(data) {
