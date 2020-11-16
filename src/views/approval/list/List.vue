@@ -124,7 +124,12 @@ export default {
       })
     },
     editDetail() {
-      this.$router.push('/approval/setting')
+      this.$router.push({
+        path: '/approval/setting',
+        query: {
+          tab: 'baseSetting'
+        }
+      })
     },
   },
 }

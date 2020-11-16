@@ -1,0 +1,80 @@
+{
+  "httpStatus": "200",
+  "errorMessage": "",
+  "metadata": {},
+  "errorCode": "",
+  "throwable": "",
+  "success": true,
+  "data": {
+    "processCode": "PROC-0D4F4CD1-9FCB-4706-9D87-F39045B801BB",
+    "modifierName": "陈代赟",
+    "conditionsRules": [
+      {
+        "label": "发起人",
+        "value": [],
+        "id": "dingtalk_origin_dept",
+        "type": "label"
+      }
+    ],
+    "modifierTime": 1598495802000,
+    "mobileSettingEnable": false,
+    "formProcessType": 0,
+    "processStatus": "PUBLISHED",
+    "formVo": {
+      "memo": "当员工考勤出现缺卡时，可发起补卡审批，审批通过后考勤报表中的缺卡记录改为正常1244",
+      "gmtCreated": 1598495802000,
+      "gmtModified": 1598495802000,
+      "creator": "071928554137633828",
+      "isDeleted": "n",
+      "pushSwitch": "0",
+      "visibleRange": "PRIVATE",
+      "formEngine": "nfb",
+      "iconUrl": "leave",
+      "system": false,
+      "iconRealUrl": "",
+      "uuid": "FORM-106CEEFC-EDCA-46DE-A558-CEFF90EFD17C",
+      "appType": null,
+      "attendanceType": 1,
+      "name": "补卡申请",
+      "state": "",
+      "content": "{\"canModify\":false,\"commentDescription\":\"\",\"commentHiddenForProposer\":\"\",\"commentRequired\":\"\",\"description\":\"当员工考勤出现缺卡时，可发起补卡审批，审批通过后考勤报表中的缺卡记录改为正常\",\"icon\":\"leave\",\"items\":[{\"children\":[{\"componentName\":\"DDDateField\",\"props\":{\"holidayOptions\":[],\"format\":\"yyyy-MM-dd HH:mm\",\"bizAlias\":\"userCheckTime\",\"id\":\"DDDateField-JYNRW51O\",\"label\":\"补卡时间\",\"placeholder\":\"请选择时间\",\"required\":true}}],\"componentName\":\"DDBizSuite\",\"props\":{\"holidayOptions\":[],\"bizType\":\"attendance.supply\",\"extract\":true,\"bizAlias\":\"supply\",\"id\":\"DDBizSuite-JYNRW2R9\",\"label\":\"\"}},{\"componentName\":\"TextareaField\",\"props\":{\"holidayOptions\":[],\"id\":\"TextareaField-JYNRW51P\",\"label\":\"补卡理由\",\"placeholder\":\"请输入\",\"required\":true}},{\"componentName\":\"DDPhotoField\",\"props\":{\"holidayOptions\":[],\"id\":\"DDPhotoField-JYNRW51Q\",\"label\":\"说明图片\"}}],\"title\":\"补卡申请\"}"
+    },
+    "processConfig": "{\"childNode\":{\"type\":\"route\",\"prevId\":\"sid-startevent\",\"nodeId\":\"9aeb_238d\",\"conditionNodes\":[{\"name\":\"条件1\",\"type\":\"condition\",\"prevId\":\"9aeb_238d\",\"nodeId\":\"a130_3a27\",\"properties\":{\"conditions\":[[{\"paramKey\":\"dingtalk_origin_dept\",\"type\":\"dingtalk_actioner_dept_condition\",\"paramLabel\":\"发起人\",\"isEmpty\":false,\"conds\":[{\"type\":\"label\",\"value\":1318716107,\"attrs\":{\"name\":\"负责人\",\"groupId\":1318716104,\"groupType\":1,\"type\":103}},{\"type\":\"label\",\"value\":1318716108,\"attrs\":{\"name\":\"主管\",\"groupId\":1318716104,\"groupType\":1,\"type\":104}}]}]]},\"childNode\":{\"name\":\"UNKNOWN\",\"type\":\"notifier\",\"prevId\":\"a130_3a27\",\"nodeId\":\"4acd_b69e\",\"properties\":{\"actionerRules\":[{\"select\":[\"allStaff\"],\"range\":{\"allStaff\":null},\"multi\":1,\"type\":\"target_select\",\"key\":\"manual_4acd_b69e_3b0a_8e13\"}]},\"childNode\":{\"childNode\":{\"name\":\"UNKNOWN\",\"nodeId\":\"UoEA_09nZ\",\"prevId\":\"zbWF_Okxl\",\"properties\":{\"actionerRules\":[{\"select\":[\"allStaff\"],\"isEmpty\":false,\"range\":{\"approvals\":[],\"labels\":[]},\"type\":\"target_select\",\"key\":\"manual_a4Ue_V2sT\",\"multi\":1}]},\"type\":\"notifier\"},\"name\":\"UNKNOWN\",\"nodeId\":\"zbWF_Okxl\",\"prevId\":\"4acd_b69e\",\"properties\":{\"actionerRules\":[{\"type\":\"target_label\",\"labelNames\":\"主管理员\",\"labels\":1318716105,\"isEmpty\":false,\"memberCount\":1,\"actType\":\"and\"}],\"activateType\":\"ALL\",\"agreeAll\":true,\"noneActionerAction\":\"admin\"},\"type\":\"approver\"}}},{\"name\":\"条件2\",\"type\":\"condition\",\"prevId\":\"9aeb_238d\",\"nodeId\":\"612d_be5f\",\"properties\":{\"conditions\":[]}}],\"properties\":{}},\"name\":\"发起人\",\"nodeId\":\"sid-startevent\",\"type\":\"start\"}",
+    "formTarget": "",
+    "dirId": "171ba63377fe143f8cb568f4a378900c",
+    "pluginConfigs": [],
+    "bizType": "",
+    "appType": 0,
+    "bizCategoryId": "attendance.supply",
+    "procType": "",
+    "procAttendanceType": 1,
+    "renderRule": "",
+    "nodeConfig": "{}",
+    "appUuid": "ding0071a8685058bd1dffe93478753d9884",
+    "formConfig": "{\"zbWF_Okxl\":[],\"sid_instStart\":[],\"791b_0ef8\":[]}",
+    "microAppStatus": {
+      "hrmDeptAndSalaryStatus": 0,
+      "internationalAttendanceAppStatus": 0,
+      "dingDangAppStatus": 0,
+      "eSignAppStatus": 0,
+      "dSignAppStatus": 0,
+      "hrmAppStatus": 1,
+      "alitripAppStatus": 0,
+      "attendanceAppStatus": 1,
+      "performanceAppStatus": 0,
+      "dingPayAppStatus": 0,
+      "businessTripAppStatus": 0
+    },
+    "properties": {
+      "static": "1",
+      "printType": "0",
+      "appendEnable": "n",
+      "titleGenRule": "{\"ruleType\":0}",
+      "autoExecuteOriginatorTasks": "false",
+      "duplicateRemoval": "false",
+      "disableProcessNameEdit": "false",
+      "handSignConf": "{\"handSignEnable\":false,\"resignEnable\":false}",
+      "processFormEditUrlH5": null
+    }
+  }
+}

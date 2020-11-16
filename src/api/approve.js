@@ -2,7 +2,7 @@ import request from '@/utils/request'
 const approveApi = {
   // getPaaSComponent: '/approve/paaSComponent',
   // getApproveConfig: '/approve/approveConfig',
-  // getFormAndProcessConfig: '/approve/processConfig',
+  getFormAndProcessConfig: '/approve/processConfig',
   // canManageMembers: '/approve/canManageMembers',
   // canVisibleDataMembers: '/approve/canVisibleDataMembers',
   // canVisibleMembers: '/approve/canVisibleMembers',
@@ -32,13 +32,13 @@ export function getMgrProcessList (parameter) {
 //   })
 // }
 // // 获取表单和流程设计数据
-// export const getFormAndProcessConfig  = (parameter) => {
-//   return request({
-//     url: approveApi.getFormAndProcessConfig,
-//     method: 'get',
-//     data: parameter,
-//   })
-// }
+export const getFormAndProcessConfig  = (parameter) => {
+  return request({
+    url: approveApi.getFormAndProcessConfig,
+    method: 'get',
+    data: parameter,
+  })
+}
 
 // // 可以管理模板并导出数据人员
 // export const canManageMembers = (parameter) => {

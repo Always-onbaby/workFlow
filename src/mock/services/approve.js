@@ -1,7 +1,7 @@
 // 审批方案列表
-import mgrProcessList from '@/assets/json/getMgrProcessList.json'
 // import list from '@/assets/json/defaultList.json'
-// import formAndProcessConfig from '@/assets/json/getFormAndProcessConfigV2.json'
+import formAndProcessConfig from '@/assets/json/getFormAndProcessConfigV2.json'
+import mgrProcessList from '@/assets/json/getMgrProcessList.json'
 // import canVisibleDataMembersList from '@/assets/json/getProcessDataVisible.json'
 // import canManageMembersList from '@/assets/json/getProcessManagerList.json'
 // import canVisibleMembersList from '@/assets/json/getProcessVisible.json'
@@ -27,12 +27,12 @@ import { builder } from '../util'
 //   return builder(info)
 // }
 
-// const processConfig = (options) => {
-//   // const body = getBody(options)
-//   // console.log('mock: body', body)
-//   return builder(formAndProcessConfig.data)
+const processConfig = (options) => {
+  // const body = getBody(options)
+  // console.log('mock: body', body)
+  return builder(formAndProcessConfig.data)
 
-// }
+}
 
 
 // const canManageMembers = (options) => {
@@ -62,7 +62,7 @@ const processList = (options) => {
 // Mock.mock(/\/approve\/paaSComponent/, 'get', paaSComponent)
 // Mock.mock(/\/approve\/iconUrlMap/, 'get', iconUrlMap)
 // Mock.mock(/\/approve\/approveConfig/, 'get', approveConfig)
-// Mock.mock(/\/approve\/processConfig/, 'get', processConfig)
+Mock.mock(/\/approve\/processConfig/, 'get', processConfig)
 // 人员列表数据
 // Mock.mock(/\/approve\/canManageMembers/, 'get', canManageMembers)
 // Mock.mock(/\/approve\/canVisibleDataMembers/, 'get', canVisibleDataMembers)
