@@ -1,0 +1,14 @@
+{
+  "httpStatus": "200",
+  "errorMessage": "",
+  "metadata": {},
+  "data": {
+    "descriptionUrl": "https:\/\/img.alicdn.com\/tfs\/TB1Y0e3kJTfau8jSZFwXXX1mVXa-1125-8808.png",
+    "installed": false,
+    "logoUrl": "https:\/\/img.alicdn.com\/tfs\/TB10kGJZUY1gK0jSZFCXXcwqXXa-240-240.png",
+    "description": "通过统一协议接入各类应用\/系统，提供强安全、高可用、轻量化的连接能力，同时输出覆盖各类业务场景的应用标准数据模型。为钉钉业务应用输出标准化的数据和服务调用，解决客户应用互联、业务自动化问题。"
+  },
+  "errorCode": "",
+  "throwable": "",
+  "success": true
+}

@@ -1,0 +1,59 @@
+{
+  "httpStatus": "200",
+  "errorMessage": "",
+  "metadata": {},
+  "data": {
+    "errorMsg": "",
+    "result": [
+      {
+        "dirId": "171ba63377f229bcba7981a4413b7fc5",
+        "dirName": "安全复工",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377fdd4cc1da08094e6d96bf7",
+        "dirName": "办公场所防疫",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377fe143f8cb568f4a378900c",
+        "dirName": "假勤管理",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377f3ab839c0746b4b04a6d4e",
+        "dirName": "人事管理",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377fbb67579fa5ef48a7b7bd4",
+        "dirName": "财务管理",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377ff80cbfb78a534076b02f2",
+        "dirName": "业务管理",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377ff33d299bb2a844728ad99",
+        "dirName": "行政管理",
+        "children": []
+      },
+      {
+        "dirId": "171ba63377fc710d1b8ddef40a58a5b7",
+        "dirName": "法务管理",
+        "children": []
+      },
+      {
+        "dirId": "other",
+        "dirName": "其他",
+        "children": []
+      }
+    ],
+    "errorCode": ""
+  },
+  "throwable": "",
+  "success": true,
+  "errorCode": ""
+}

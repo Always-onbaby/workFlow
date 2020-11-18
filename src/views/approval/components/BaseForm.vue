@@ -10,6 +10,7 @@
                   :class="['radio-item', currentRadio === item.value ? 'radio-active' : '']"
                   v-for="item of radioList"
                   :key="item.value"
+                  @click="changeRadio(item.value)"
                 >{{item.label}}</div>
               </div>
               <div class="radio-content">
@@ -66,6 +67,11 @@ export default {
       ],
     }
   },
+  methods: {
+    changeRadio(val) {
+      this.currentRadio = val
+    }
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -241,7 +247,10 @@ export default {
       justify-content: center;
       background: #fff;
       width: 100%;
-      height: 100vh;
+      flex: 1;
+      // height: 100vh;
+      overflow-y: auto;
+      @scrollbar();
     }
   }
 }

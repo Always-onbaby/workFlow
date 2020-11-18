@@ -1,0 +1,39 @@
+{
+  "httpStatus": "200",
+  "errorMessage": "",
+  "metadata": {},
+  "errorCode": "",
+  "success": true,
+  "throwable": "",
+  "data": {
+    "componentNameList": [
+      "InnerContactField",
+      "OwnerField",
+      "DepartmentField",
+      "TimeAndLocationField",
+      "ParticipantField",
+      "DDPhotoField",
+      "FormRelateField",
+      "StarRatingField",
+      "TextField",
+      "CalculateField",
+      "TextNote",
+      "AddressField",
+      "CreatorField",
+      "MoneyField",
+      "DDSelectField",
+      "DDDateRangeField",
+      "TextareaField",
+      "DDMultiSelectField",
+      "TableField",
+      "NumberField",
+      "SeqNumberField",
+      "DDDateField",
+      "ModifyTimeField",
+      "CreateTimeField",
+      "PhoneField",
+      "DDAttachment",
+      "ExternalContactField"
+    ]
+  }
+}
