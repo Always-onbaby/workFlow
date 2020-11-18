@@ -1,0 +1,28 @@
+// webkit下滚动条样式
+@scrollbar: {
+	&::-webkit-scrollbar {
+		width: 12px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: rgba(50, 50, 50, .25);
+		border: 2px solid transparent;
+		border-radius: 10px;
+		background-clip: padding-box;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: rgba(50, 50, 50, .05);
+	}
+}
+// 水平垂直居中
+@center: {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+// flex
+@flex_center: {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

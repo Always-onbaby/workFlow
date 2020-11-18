@@ -112,15 +112,7 @@ export default {
               width: 100%;
               height: calc(100vh - 44px);
               padding: 0 12px 60px;
-              &::-webkit-scrollbar {
-                width: 4px;
-                height: 4px;
-                background-color: #f8f8f8;
-              }
-              &::-webkit-scrollbar-thumb {
-                border-radius: 16px;
-                background-color: #e8e8e8;
-              }
+              @scrollbar();
               .widget-box {
                 margin-top: 20px;
                 display: flex;
