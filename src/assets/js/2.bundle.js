@@ -1032,1129 +1032,1131 @@
             return (i === ve.c.expert ? {
               title: "",
               description: "",
-              items: [{
-                isRelateForm: !0,
-                componentName: "FormRelateField",
-                name: "关联业务数据",
-                description: "",
-                icon: "logo_relate",
-                category: "relateForm",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "fields",
-                  setterName: "FormRelateSetter",
-                  props: {
-                    label: "关联字段"
-                  }
-                }, {
-                  propName: ["rely", "dataSource"],
-                  setterName: "FilterSetter",
-                  props: {
-                    label: "数据过滤"
-                  }
-                }, {
-                  propName: "quote",
-                  setterName: "Switch",
-                  props: {
-                    label: "关联数据更新时，是否更新此表单？",
-                    dataSource: [0, 1],
-                    dropToTableValue: 0,
-                    disabled: !0,
-                    visible: !1
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "",
-                  title: "",
-                  multi: 0,
-                  quote: 1,
-                  fields: [],
-                  dataSource: {},
-                  required: !1
-                }
-              }, {
-                componentName: "TextField",
-                name: "单行输入框",
-                description: "",
-                icon: "logo_input2",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: "validation",
-                  setterName: "Select",
-                  props: {
-                    label: "格式",
-                    options: [{
-                      value: "",
-                      label: "无"
-                    }, {
-                      value: "mobilephone",
-                      label: "手机号码"
-                    }, {
-                      value: "idCard",
-                      label: "身份证号码"
-                    }]
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值"
-                  }
-                }, {
-                  propName: "invisible",
-                  setterName: "Switch",
-                  props: {
-                    label: "隐藏"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "单行输入框",
-                  placeholder: "请输入",
-                  validation: "",
-                  required: !1
-                }
-              }, {
-                componentName: "TextareaField",
-                name: "多行输入框",
-                description: "",
-                icon: "logo_inputArea",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "多行输入框",
-                  placeholder: "请输入",
-                  required: !1
-                }
-              }, {
-                componentName: "NumberField",
-                name: "数字输入框",
-                description: "",
-                icon: "logo_inputNum",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: "unit",
-                  setterName: "Input",
-                  props: {
-                    label: "单位",
-                    placeholder: "请输入"
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "数字输入框",
-                  placeholder: "请输入数字",
-                  unit: "",
-                  required: !1
-                }
-              }, {
-                componentName: "DDSelectField",
-                name: "单选框",
-                description: "",
-                icon: "logo_radio",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: ["options", "behaviorLinkage", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "选项",
-                    type: "select",
-                    linkageEnable: !0
-                  }
-                }, {
-                  propName: "spread",
-                  setterName: "Switch",
-                  props: {
-                    label: "选项平铺"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "单选框",
-                  placeholder: "请选择",
-                  options: [{
-                    key: "option_0",
-                    value: "选项1"
-                  }, {
-                    key: "option_1",
-                    value: "选项2"
-                  }, {
-                    key: "option_2",
-                    value: "选项3"
-                  }],
-                  spread: !1,
-                  required: !1
-                }
-              }, {
-                componentName: "DDMultiSelectField",
-                name: "多选框",
-                description: "",
-                icon: "logo_check",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: ["options", "behaviorLinkage", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "选项",
-                    type: "select",
-                    linkageEnable: !0
-                  }
-                }, {
-                  propName: "spread",
-                  setterName: "Switch",
-                  props: {
-                    label: "选项平铺"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "多选框",
-                  placeholder: "请选择",
-                  options: [{
-                    key: "option_0",
-                    value: "选项1"
-                  }, {
-                    key: "option_1",
-                    value: "选项2"
-                  }, {
-                    key: "option_2",
-                    value: "选项3"
-                  }],
-                  spread: !1,
-                  required: !1
-                }
-              }, {
-                componentName: "DDDateField",
-                name: "日期",
-                description: "",
-                icon: "logo_date",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "format",
-                  setterName: "Select",
-                  props: {
-                    label: "日期类型",
-                    options: [{
-                      value: "yyyy-MM-dd",
-                      label: "年-月-日"
-                    }, {
-                      value: "yyyy-MM-dd HH:mm",
-                      label: "年-月-日 时:分"
-                    }]
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值",
-                    type: "date"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "日期",
-                  format: "yyyy-MM-dd",
-                  required: !1
-                }
-              }, {
-                componentName: "DDDateRangeField",
-                name: "日期区间",
-                description: "",
-                icon: "logo_dateRange",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "InputGroupSetter",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "format",
-                  setterName: "Select",
-                  props: {
-                    label: "日期类型",
-                    options: [{
-                      value: "yyyy-MM-dd",
-                      label: "年-月-日"
-                    }, {
-                      value: "yyyy-MM-dd HH:mm",
-                      label: "年-月-日 时:分"
-                    }]
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: "duration",
-                  setterName: "Switch",
-                  props: {
-                    label: "自动计算时长"
-                  }
-                }, {
-                  propName: "durationLabel",
-                  setterName: "Input",
-                  props: {
-                    label: "时长标题"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: ["开始时间", "结束时间"],
-                  placeholder: "请选择",
-                  format: "yyyy-MM-dd",
-                  unit: "天",
-                  required: !1,
-                  duration: !0,
-                  durationLabel: "时长",
-                  pushToCalendar: "0"
-                }
-              }, {
-                componentName: "DDAttachment",
-                name: "附件",
-                description: "",
-                icon: "logo_attachment",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "附件",
-                  required: !1
-                }
-              }, {
-                componentName: "PhoneField",
-                name: "手机",
-                description: "",
-                icon: "logo_phone",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "手机",
-                  required: !1
-                }
-              }, {
-                componentName: "DDPhotoField",
-                name: "图片",
-                description: "",
-                icon: "logo_image",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "useAlbum",
-                  setterName: "Switch",
-                  props: {
-                    label: "只允许拍照",
-                    description: "",
-                    dataSource: [!0, !1]
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "图片",
-                  watermark: !1,
-                  useAlbum: !0,
-                  required: !1
-                }
-              }, {
-                dropToTableEnable: !1,
-                isContainer: !0,
-                isTable: !0,
-                componentName: "TableField",
-                name: "明细",
-                description: "",
-                icon: "logo_table",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "actionName",
-                  setterName: "Input",
-                  props: {
-                    label: "动作名称"
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值",
-                    type: "table"
-                  }
-                }, {
-                  propName: "tableViewMode",
-                  setterName: "Radio",
-                  props: {
-                    label: "填写方式",
-                    options: [{
-                      label: "列表",
-                      value: "list"
-                    }, {
-                      label: "表格",
-                      value: "table"
-                    }]
-                  }
-                }],
-                props: {
-                  label: "表格",
-                  actionName: "添加",
-                  tableViewMode: "table"
-                },
-                children: []
-              }, {
-                componentName: "CalculateField",
-                name: "计算公式",
-                description: "",
-                icon: "logo_calculation",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: "formula",
-                  setterName: "CalculationSetter",
-                  props: {
-                    label: "计算公式"
-                  }
-                }, {
-                  propName: "notUpper",
-                  setterName: "Switch",
-                  props: {
-                    label: "显示大写",
-                    subLabel: "输入数字后自动显示大写",
-                    dataSource: ["1", "0"]
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "计算公式",
-                  placeholder: "自动计算数值",
-                  notUpper: "0",
-                  formula: []
-                }
-              }, {
-                componentName: "MoneyField",
-                name: "金额",
-                description: "",
-                icon: "logo_money",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值"
-                  }
-                }, {
-                  propName: "notUpper",
-                  setterName: "Switch",
-                  props: {
-                    label: "显示大写",
-                    subLabel: "输入数字后自动显示大写",
-                    dataSource: ["1", "0"]
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "金额（元）",
-                  placeholder: "请输入金额",
-                  notUpper: "0",
-                  required: !1
-                }
-              }, {
-                componentName: "TextNote",
-                name: "说明文字",
-                description: "",
-                icon: "logo_info",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "content",
-                  setterName: "Textarea",
-                  props: {
-                    label: "内容"
-                  }
-                }, {
-                  propName: "link",
-                  setterName: "Input",
-                  props: {
-                    label: "跳转链接",
-                    placeholder: "请输入，如:http://www.dingtalk.com"
-                  }
-                }],
-                props: {
-                  content: "说明文字",
-                  link: "",
-                  watch: !1
-                }
-              }, {
-                componentName: "DepartmentField",
-                name: "部门",
-                description: "",
-                icon: "logo_department",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值",
-                    relyOptions: [0, 2],
-                    customValueSetter: null
-                  }
-                }, {
-                  propName: "multiple",
-                  setterName: "Switch",
-                  props: {
-                    label: "多选"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "部门",
-                  multiple: !1,
-                  required: !1
-                }
-              }, {
-                componentName: "InnerContactField",
-                name: "联系人",
-                description: "",
-                icon: "logo_contact",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "placeholder",
-                  setterName: "Input",
-                  props: {
-                    label: "提示文字"
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值",
-                    relyOptions: [0, 2, 3],
-                    customValueSetter: null
-                  }
-                }, {
-                  propName: "choice",
-                  setterName: "Switch",
-                  props: {
-                    label: "多选"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  label: "联系人",
-                  placeholder: "提示文字",
-                  choice: 0,
-                  required: !1
-                }
-              }, {
-                componentName: "ExternalContactField",
-                name: "外部联系人",
-                description: "",
-                icon: "logo_contact",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }],
-                props: {
-                  label: "外部联系人",
-                  required: !1
-                }
-              }, {
-                componentName: "StarRatingField",
-                name: "评分",
-                icon: "logo_star",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "limit",
-                  setterName: "Radio",
-                  props: {
-                    label: "评分制",
-                    options: [{
-                      value: 5,
-                      label: "五分制"
-                    }, {
-                      value: 10,
-                      label: "十分制"
-                    }]
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "是否必填"
-                  }
-                }],
-                props: {
-                  label: "请进行评分",
-                  placeholder: "请输入",
-                  limit: 5,
-                  required: !1
-                }
-              }, {
-                componentName: "TimeAndLocationField",
-                name: "当前位置",
-                description: "",
-                icon: "logo_location",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  required: !1,
-                  label: ["当前时间", "当前地点"]
-                }
-              }, {
-                componentName: "AddressField",
-                name: "地址",
-                description: "",
-                icon: "logo_city",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "needDetail",
-                  setterName: "Select",
-                  props: {
-                    label: "类型",
-                    options: [{
-                      value: !1,
-                      label: "省-市-区"
-                    }, {
-                      value: !0,
-                      label: "省-市-区-详细地址"
-                    }]
-                  }
-                }, {
-                  propName: ["defaultValue", "fields", "rely", "dataSource"],
-                  setterName: "DefaultValueSetter",
-                  props: {
-                    label: "默认值",
-                    relyOptions: [0, 2],
-                    customValueSetter: null
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "必填"
-                  }
-                }],
-                props: {
-                  required: !1,
-                  label: "地址",
-                  needDetail: !0
-                }
-              }, {
-                dropToTableEnable: !1,
-                isUnique: !0,
-                componentName: "OwnerField",
-                name: "负责人",
-                description: "",
-                icon: "logo_contact",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "是否必填"
-                  }
-                }],
-                props: {
-                  isUnique: !0,
-                  required: !1,
-                  placeholder: "请选择",
-                  label: "负责人",
-                  scope: {},
-                  type: "user"
-                }
-              }, {
-                isUnique: !0,
-                dropToTableEnable: !1,
-                componentName: "ParticipantField",
-                name: "协同人",
-                description: "",
-                icon: "logo_contact",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "required",
-                  setterName: "Switch",
-                  props: {
-                    label: "是否必填"
-                  }
-                }],
-                props: {
-                  isUnique: !0,
-                  required: !1,
-                  placeholder: "请选择",
-                  label: "协同人",
-                  scope: {},
-                  type: "user"
-                }
-              }, {
-                isUnique: !0,
-                dropToTableEnable: !1,
-                componentName: "CreatorField",
-                name: "创建人",
-                description: "",
-                icon: "logo_contact",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }],
-                props: {
-                  label: "创建人"
-                }
-              }, {
-                isUnique: !0,
-                dropToTableEnable: !1,
-                componentName: "CreateTimeField",
-                name: "创建时间",
-                description: "",
-                icon: "logo_date",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }],
-                props: {
-                  label: "创建时间"
-                }
-              }, {
-                isUnique: !0,
-                dropToTableEnable: !1,
-                componentName: "ModifyTimeField",
-                name: "修改时间",
-                description: "",
-                icon: "logo_date",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }],
-                props: {
-                  label: "修改时间"
-                }
-              }, {
-                isUnique: !0,
-                dropToTableEnable: !1,
-                componentName: "SeqNumberField",
-                name: "流水号",
-                description: "",
-                icon: "logo_serial",
-                setters: [{
-                  propName: "bizAlias",
-                  setterName: "Input",
-                  props: {
-                    label: "bizAlias"
-                  }
-                }, {
-                  propName: "label",
-                  setterName: "Input",
-                  props: {
-                    label: "标题"
-                  }
-                }, {
-                  propName: "rule",
-                  setterName: "SerialSetter",
-                  props: {
-                    label: "规则"
-                  }
-                }],
-                props: {
-                  label: "流水号",
-                  rule: [{
-                    type: "date",
-                    value: "YYYYMMDD"
-                  }, {
-                    type: "counter",
-                    value: {
-                      start: 1,
-                      length: 8,
-                      reset: "year"
+              items: [
+                {
+                  isRelateForm: !0,
+                  componentName: "FormRelateField",
+                  name: "关联业务数据",
+                  description: "",
+                  icon: "logo_relate",
+                  category: "relateForm",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
                     }
-                  }]
-                }
-              }]
+                  }, {
+                    propName: "fields",
+                    setterName: "FormRelateSetter",
+                    props: {
+                      label: "关联字段"
+                    }
+                  }, {
+                    propName: ["rely", "dataSource"],
+                    setterName: "FilterSetter",
+                    props: {
+                      label: "数据过滤"
+                    }
+                  }, {
+                    propName: "quote",
+                    setterName: "Switch",
+                    props: {
+                      label: "关联数据更新时，是否更新此表单？",
+                      dataSource: [0, 1],
+                      dropToTableValue: 0,
+                      disabled: !0,
+                      visible: !1
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "",
+                    title: "",
+                    multi: 0,
+                    quote: 1,
+                    fields: [],
+                    dataSource: {},
+                    required: !1
+                  }
+                }, {
+                  componentName: "TextField",
+                  name: "单行输入框",
+                  description: "",
+                  icon: "logo_input2",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: "validation",
+                    setterName: "Select",
+                    props: {
+                      label: "格式",
+                      options: [{
+                        value: "",
+                        label: "无"
+                      }, {
+                        value: "mobilephone",
+                        label: "手机号码"
+                      }, {
+                        value: "idCard",
+                        label: "身份证号码"
+                      }]
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值"
+                    }
+                  }, {
+                    propName: "invisible",
+                    setterName: "Switch",
+                    props: {
+                      label: "隐藏"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "单行输入框",
+                    placeholder: "请输入",
+                    validation: "",
+                    required: !1
+                  }
+                }, {
+                  componentName: "TextareaField",
+                  name: "多行输入框",
+                  description: "",
+                  icon: "logo_inputArea",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "多行输入框",
+                    placeholder: "请输入",
+                    required: !1
+                  }
+                }, {
+                  componentName: "NumberField",
+                  name: "数字输入框",
+                  description: "",
+                  icon: "logo_inputNum",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: "unit",
+                    setterName: "Input",
+                    props: {
+                      label: "单位",
+                      placeholder: "请输入"
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "数字输入框",
+                    placeholder: "请输入数字",
+                    unit: "",
+                    required: !1
+                  }
+                }, {
+                  componentName: "DDSelectField",
+                  name: "单选框",
+                  description: "",
+                  icon: "logo_radio",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: ["options", "behaviorLinkage", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "选项",
+                      type: "select",
+                      linkageEnable: !0
+                    }
+                  }, {
+                    propName: "spread",
+                    setterName: "Switch",
+                    props: {
+                      label: "选项平铺"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "单选框",
+                    placeholder: "请选择",
+                    options: [{
+                      key: "option_0",
+                      value: "选项1"
+                    }, {
+                      key: "option_1",
+                      value: "选项2"
+                    }, {
+                      key: "option_2",
+                      value: "选项3"
+                    }],
+                    spread: !1,
+                    required: !1
+                  }
+                }, {
+                  componentName: "DDMultiSelectField",
+                  name: "多选框",
+                  description: "",
+                  icon: "logo_check",
+                  setters: [
+                    {
+                      propName: "bizAlias",
+                      setterName: "Input",
+                      props: {
+                        label: "bizAlias"
+                      }
+                    }, {
+                      propName: "label",
+                      setterName: "Input",
+                      props: {
+                        label: "标题"
+                      }
+                    }, {
+                      propName: "placeholder",
+                      setterName: "Input",
+                      props: {
+                        label: "提示文字"
+                      }
+                    }, {
+                      propName: ["options", "behaviorLinkage", "fields", "rely", "dataSource"],
+                      setterName: "DefaultValueSetter",
+                      props: {
+                        label: "选项",
+                        type: "select",
+                        linkageEnable: !0
+                      }
+                    }, {
+                      propName: "spread",
+                      setterName: "Switch",
+                      props: {
+                        label: "选项平铺"
+                      }
+                    }, {
+                      propName: "required",
+                      setterName: "Switch",
+                      props: {
+                        label: "必填"
+                      }
+                    }],
+                  props: {
+                    label: "多选框",
+                    placeholder: "请选择",
+                    options: [{
+                      key: "option_0",
+                      value: "选项1"
+                    }, {
+                      key: "option_1",
+                      value: "选项2"
+                    }, {
+                      key: "option_2",
+                      value: "选项3"
+                    }],
+                    spread: !1,
+                    required: !1
+                  }
+                }, {
+                  componentName: "DDDateField",
+                  name: "日期",
+                  description: "",
+                  icon: "logo_date",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "format",
+                    setterName: "Select",
+                    props: {
+                      label: "日期类型",
+                      options: [{
+                        value: "yyyy-MM-dd",
+                        label: "年-月-日"
+                      }, {
+                        value: "yyyy-MM-dd HH:mm",
+                        label: "年-月-日 时:分"
+                      }]
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值",
+                      type: "date"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "日期",
+                    format: "yyyy-MM-dd",
+                    required: !1
+                  }
+                }, {
+                  componentName: "DDDateRangeField",
+                  name: "日期区间",
+                  description: "",
+                  icon: "logo_dateRange",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "InputGroupSetter",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "format",
+                    setterName: "Select",
+                    props: {
+                      label: "日期类型",
+                      options: [{
+                        value: "yyyy-MM-dd",
+                        label: "年-月-日"
+                      }, {
+                        value: "yyyy-MM-dd HH:mm",
+                        label: "年-月-日 时:分"
+                      }]
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: "duration",
+                    setterName: "Switch",
+                    props: {
+                      label: "自动计算时长"
+                    }
+                  }, {
+                    propName: "durationLabel",
+                    setterName: "Input",
+                    props: {
+                      label: "时长标题"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: ["开始时间", "结束时间"],
+                    placeholder: "请选择",
+                    format: "yyyy-MM-dd",
+                    unit: "天",
+                    required: !1,
+                    duration: !0,
+                    durationLabel: "时长",
+                    pushToCalendar: "0"
+                  }
+                }, {
+                  componentName: "DDAttachment",
+                  name: "附件",
+                  description: "",
+                  icon: "logo_attachment",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "附件",
+                    required: !1
+                  }
+                }, {
+                  componentName: "PhoneField",
+                  name: "手机",
+                  description: "",
+                  icon: "logo_phone",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "手机",
+                    required: !1
+                  }
+                }, {
+                  componentName: "DDPhotoField",
+                  name: "图片",
+                  description: "",
+                  icon: "logo_image",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "useAlbum",
+                    setterName: "Switch",
+                    props: {
+                      label: "只允许拍照",
+                      description: "",
+                      dataSource: [!0, !1]
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "图片",
+                    watermark: !1,
+                    useAlbum: !0,
+                    required: !1
+                  }
+                }, {
+                  dropToTableEnable: !1,
+                  isContainer: !0,
+                  isTable: !0,
+                  componentName: "TableField",
+                  name: "明细",
+                  description: "",
+                  icon: "logo_table",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "actionName",
+                    setterName: "Input",
+                    props: {
+                      label: "动作名称"
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值",
+                      type: "table"
+                    }
+                  }, {
+                    propName: "tableViewMode",
+                    setterName: "Radio",
+                    props: {
+                      label: "填写方式",
+                      options: [{
+                        label: "列表",
+                        value: "list"
+                      }, {
+                        label: "表格",
+                        value: "table"
+                      }]
+                    }
+                  }],
+                  props: {
+                    label: "表格",
+                    actionName: "添加",
+                    tableViewMode: "table"
+                  },
+                  children: []
+                }, {
+                  componentName: "CalculateField",
+                  name: "计算公式",
+                  description: "",
+                  icon: "logo_calculation",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: "formula",
+                    setterName: "CalculationSetter",
+                    props: {
+                      label: "计算公式"
+                    }
+                  }, {
+                    propName: "notUpper",
+                    setterName: "Switch",
+                    props: {
+                      label: "显示大写",
+                      subLabel: "输入数字后自动显示大写",
+                      dataSource: ["1", "0"]
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "计算公式",
+                    placeholder: "自动计算数值",
+                    notUpper: "0",
+                    formula: []
+                  }
+                }, {
+                  componentName: "MoneyField",
+                  name: "金额",
+                  description: "",
+                  icon: "logo_money",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值"
+                    }
+                  }, {
+                    propName: "notUpper",
+                    setterName: "Switch",
+                    props: {
+                      label: "显示大写",
+                      subLabel: "输入数字后自动显示大写",
+                      dataSource: ["1", "0"]
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "金额（元）",
+                    placeholder: "请输入金额",
+                    notUpper: "0",
+                    required: !1
+                  }
+                }, {
+                  componentName: "TextNote",
+                  name: "说明文字",
+                  description: "",
+                  icon: "logo_info",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "content",
+                    setterName: "Textarea",
+                    props: {
+                      label: "内容"
+                    }
+                  }, {
+                    propName: "link",
+                    setterName: "Input",
+                    props: {
+                      label: "跳转链接",
+                      placeholder: "请输入，如:http://www.dingtalk.com"
+                    }
+                  }],
+                  props: {
+                    content: "说明文字",
+                    link: "",
+                    watch: !1
+                  }
+                }, {
+                  componentName: "DepartmentField",
+                  name: "部门",
+                  description: "",
+                  icon: "logo_department",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值",
+                      relyOptions: [0, 2],
+                      customValueSetter: null
+                    }
+                  }, {
+                    propName: "multiple",
+                    setterName: "Switch",
+                    props: {
+                      label: "多选"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "部门",
+                    multiple: !1,
+                    required: !1
+                  }
+                }, {
+                  componentName: "InnerContactField",
+                  name: "联系人",
+                  description: "",
+                  icon: "logo_contact",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "placeholder",
+                    setterName: "Input",
+                    props: {
+                      label: "提示文字"
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值",
+                      relyOptions: [0, 2, 3],
+                      customValueSetter: null
+                    }
+                  }, {
+                    propName: "choice",
+                    setterName: "Switch",
+                    props: {
+                      label: "多选"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    label: "联系人",
+                    placeholder: "提示文字",
+                    choice: 0,
+                    required: !1
+                  }
+                }, {
+                  componentName: "ExternalContactField",
+                  name: "外部联系人",
+                  description: "",
+                  icon: "logo_contact",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }],
+                  props: {
+                    label: "外部联系人",
+                    required: !1
+                  }
+                }, {
+                  componentName: "StarRatingField",
+                  name: "评分",
+                  icon: "logo_star",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "limit",
+                    setterName: "Radio",
+                    props: {
+                      label: "评分制",
+                      options: [{
+                        value: 5,
+                        label: "五分制"
+                      }, {
+                        value: 10,
+                        label: "十分制"
+                      }]
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "是否必填"
+                    }
+                  }],
+                  props: {
+                    label: "请进行评分",
+                    placeholder: "请输入",
+                    limit: 5,
+                    required: !1
+                  }
+                }, {
+                  componentName: "TimeAndLocationField",
+                  name: "当前位置",
+                  description: "",
+                  icon: "logo_location",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    required: !1,
+                    label: ["当前时间", "当前地点"]
+                  }
+                }, {
+                  componentName: "AddressField",
+                  name: "地址",
+                  description: "",
+                  icon: "logo_city",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "needDetail",
+                    setterName: "Select",
+                    props: {
+                      label: "类型",
+                      options: [{
+                        value: !1,
+                        label: "省-市-区"
+                      }, {
+                        value: !0,
+                        label: "省-市-区-详细地址"
+                      }]
+                    }
+                  }, {
+                    propName: ["defaultValue", "fields", "rely", "dataSource"],
+                    setterName: "DefaultValueSetter",
+                    props: {
+                      label: "默认值",
+                      relyOptions: [0, 2],
+                      customValueSetter: null
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "必填"
+                    }
+                  }],
+                  props: {
+                    required: !1,
+                    label: "地址",
+                    needDetail: !0
+                  }
+                }, {
+                  dropToTableEnable: !1,
+                  isUnique: !0,
+                  componentName: "OwnerField",
+                  name: "负责人",
+                  description: "",
+                  icon: "logo_contact",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "是否必填"
+                    }
+                  }],
+                  props: {
+                    isUnique: !0,
+                    required: !1,
+                    placeholder: "请选择",
+                    label: "负责人",
+                    scope: {},
+                    type: "user"
+                  }
+                }, {
+                  isUnique: !0,
+                  dropToTableEnable: !1,
+                  componentName: "ParticipantField",
+                  name: "协同人",
+                  description: "",
+                  icon: "logo_contact",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "required",
+                    setterName: "Switch",
+                    props: {
+                      label: "是否必填"
+                    }
+                  }],
+                  props: {
+                    isUnique: !0,
+                    required: !1,
+                    placeholder: "请选择",
+                    label: "协同人",
+                    scope: {},
+                    type: "user"
+                  }
+                }, {
+                  isUnique: !0,
+                  dropToTableEnable: !1,
+                  componentName: "CreatorField",
+                  name: "创建人",
+                  description: "",
+                  icon: "logo_contact",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }],
+                  props: {
+                    label: "创建人"
+                  }
+                }, {
+                  isUnique: !0,
+                  dropToTableEnable: !1,
+                  componentName: "CreateTimeField",
+                  name: "创建时间",
+                  description: "",
+                  icon: "logo_date",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }],
+                  props: {
+                    label: "创建时间"
+                  }
+                }, {
+                  isUnique: !0,
+                  dropToTableEnable: !1,
+                  componentName: "ModifyTimeField",
+                  name: "修改时间",
+                  description: "",
+                  icon: "logo_date",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }],
+                  props: {
+                    label: "修改时间"
+                  }
+                }, {
+                  isUnique: !0,
+                  dropToTableEnable: !1,
+                  componentName: "SeqNumberField",
+                  name: "流水号",
+                  description: "",
+                  icon: "logo_serial",
+                  setters: [{
+                    propName: "bizAlias",
+                    setterName: "Input",
+                    props: {
+                      label: "bizAlias"
+                    }
+                  }, {
+                    propName: "label",
+                    setterName: "Input",
+                    props: {
+                      label: "标题"
+                    }
+                  }, {
+                    propName: "rule",
+                    setterName: "SerialSetter",
+                    props: {
+                      label: "规则"
+                    }
+                  }],
+                  props: {
+                    label: "流水号",
+                    rule: [{
+                      type: "date",
+                      value: "YYYYMMDD"
+                    }, {
+                      type: "counter",
+                      value: {
+                        start: 1,
+                        length: 8,
+                        reset: "year"
+                      }
+                    }]
+                  }
+                }]
             } : function (e) {
               var t, a, i, l, r, p, n, s, d, c, m = e.microAppStatus, _ = void 0 === m ? {} : m, u = e.alitripConfig, b = e.rets, h = void 0 === b ? {} : b, N = window.trialFeatures || {}, x = D()(_, "alitripAppStatus", 0), v = function () {
                 return _ && _.dingPayAppStatus && Object(ce.A)() ? {
@@ -7775,7 +7777,8 @@
                       }
                     }]
                   }]
-                }, {
+                },
+                {
                   addEnable: !1,
                   isSuite: !0,
                   name: "发薪套件",
