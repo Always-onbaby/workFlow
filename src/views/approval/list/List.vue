@@ -127,8 +127,8 @@ export default {
       this.$router.push({
         path: '/approval/setting',
         query: {
-          tab: 'baseSetting'
-        }
+          tab: 'baseSetting',
+        },
       })
     },
   },
